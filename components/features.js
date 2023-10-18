@@ -8,33 +8,21 @@ const features = [
     icon: FaGraduationCap,
   },
   {
-    name: 'Virtual guidance',
-    description:
-      'Empower students to learn all about the professional world with virtual career simulations, exhaustive career library, career blogs and vlogs.',
-    icon: FaUserMd,
-  },
-  {
-    name: 'Career path',
-    description:
-      'Pave student’s way to their dream college with our end-to-end college application guidance, scholarship drive and corporate internship program.',
-    icon: FaAward,
-  },
-  {
     name: 'Career guidance',
     description:
       'Enable schools in creating a career guidance ecosystem in sync with the vision of New Education Policy',
     icon: FaUserGraduate,
   },
   {
-    name: 'Empowering teachers',
+    name: 'Empowering career counsellors',
     description:
-      'Empower educators to become International Certified Career Coaches and build a career in career guidance & counselling',
+      'Empower career counselors with training and tools to build a better career in guidance and Counseling.',
     icon: FaUserTie,
   },
   {
     name: 'Technology driven',
     description:
-      'Revolutionary assessment platform and technology driven career guidance solutions for educators to boost their career guidance & counselling practice',
+      'Revolutionary A.I Psychometric Career Assessment.',
     icon: FaLaptopCode,
   },
 ]

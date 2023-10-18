@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         trueGray: colors.neutral,
       },
+      backgroundImage: {
+        bgImg: '/img/bg.jpg'
+      }
     },
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],

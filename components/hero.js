@@ -1,73 +1,47 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.svg";
+import bgImg from "../public/img/bg.jpg";
+import { useState } from "react";
+import Navbar from "../components/navbar";
 
 const Hero = () => {
   return (
-    <>
-      <Container className="flex flex-wrap ">
-        <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-            Every Student Deserves Access to Career Guidance
-            </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Careerlab is giving students free access to expert career guidance and counseling
-            </p>
-
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-green-700 rounded-md ">
-                Speak with our counsellor for Free
-              </a>
+    <div className="relative">
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="bg-[url('../public/img/bg.jpg')] bg-center bg-cover">
+        <Navbar />
+        <div className="relative px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl py-28 sm:py-48 lg:py-56">
+            <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
+            <div className="text-center">
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                Find Clarity. Discover your perfect career.
+              </h1>
+              <p className="mt-6 text-lg leading-8 text-gray-400">
+                Every Student Deserves Access to Career Guidance and counseling.
+                Get free access to expert career guidance and counseling.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                  href="#"
+                  className="rounded-md bg-green-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Get started
+                </a>
+                <a
+                  href="#"
+                  className="text-sm font-semibold leading-6 text-white"
+                >
+                  Learn more <span aria-hidden="true">→</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
-            <Image
-              src={heroImg}
-              width="616"
-              height="617"
-              className={"object-cover"}
-              alt="Hero Illustration"
-              loading="eager"
-            />
-          </div>
-        </div>
-      </Container>
-      <Container>
-        <div className="flex flex-col justify-center">
-          <div className="text-xl text-center text-gray-700 dark:text-white">
-            Trusted by <span className="text-green-700">2000+</span>{" "}
-            customers worldwide
-          </div>
-
-          {/* trusted clients section  */}
-          {/* <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <AmazonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <VerizonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <MicrosoftLogo />
-            </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <NetflixLogo />
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <SonyLogo />
-            </div>
-          </div> */}
-        </div>
-      </Container>
-    </>
+      </div>
+    </div>
   );
-}
+};
 
 export default Hero;

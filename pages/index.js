@@ -26,7 +26,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Features />
       <Benefits imgPos="right" data={benefitTwo} />
